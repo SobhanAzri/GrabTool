@@ -37,7 +37,7 @@ Keep in mind that I made this component as the **only component which casts a tr
 ## Technical Details
 - **Engine:** Unreal Engine 5.6.1  
 - **Language:** C++ & Blueprint  
-- **Source Location:** `Source/Public/Components/Grabber`
+- **Source Location:** `Source/GrabTool/Public/Components/GrabTool`
 
 ---
 
