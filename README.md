@@ -6,11 +6,11 @@ it is Actually a Component That You Can Add to A Character.
 Just Know That Art or Design of the game was not my Target and i jst wanted to Showcase the Core C++ Logic and Mechanics.
 
 
-## 🎮 Project Overview
+## Project Overview
 This project showcases a **Grabber Component** that allows characters to grab, hold, rotate, and scale objects in a 3D environment. Built with performance and flexibility in mind, the component is ideal for developers looking to implement interactive object manipulation in their Unreal Engine projects. keep in mind that i made this Component as the Only Component Which Casts a Trace or Checks for Interactable Items. So be aware to not use everything without optimizing according tou your game. if you have another component that casts Trace , you can modify or use parts of this code to achieve the Grabber Mechanics.
 
 
-## ✨ Key Features
+## Key Features
 - **Physics-Based Grab System:**
   - Implemented a System for Grabbing and Holding Objects.
   - It Completely Keeps the Object's Base Rotation & Scale.you Can Rotate or Scale the Grabbed Item Yourself.
@@ -28,13 +28,13 @@ This project showcases a **Grabber Component** that allows characters to grab, h
   - The Core Mechanics of this Project is Written in C++ for Performance and Showing my Understanding of this Language and Engine.
 
 
-## 🛠 Technical Details
+## Technical Details
 - **Engine :** Unreal Engine 5.6.1
 - **Language:** C++ & Blueprint
 - **Source Location:** the Grab System Sources are located in Source/Public/Components/Grabber
 
 
-##🚀 Future Plans
+## Future Plans
 i will create other Repositories for Other Game Mechanics As Well , and After That, i Plan to Make a full game with this mechanics and i will upload the whole Game's Source to another repo.
 
 
