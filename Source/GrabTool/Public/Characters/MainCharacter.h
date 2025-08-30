@@ -7,6 +7,7 @@
 class UInputMappingContext;
 class UInputAction;
 class UCameraComponent;
+class UGrabToolComponent;
 
 
 struct FInputActionValue;
@@ -44,6 +45,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* CameraComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	UGrabToolComponent* GrabToolComponent;
 
 	//***	Input	***//
 

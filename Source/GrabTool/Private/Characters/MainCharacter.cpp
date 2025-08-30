@@ -3,6 +3,7 @@
 #include "EnhancedInputComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Components/GrabToolComponent.h"
 
 AMainCharacter::AMainCharacter()
 {
@@ -19,6 +20,9 @@ AMainCharacter::AMainCharacter()
 	CameraComponent->bEnableFirstPersonScale = true;
 	CameraComponent->FirstPersonScale = .6f;
 	CameraComponent->bUsePawnControlRotation = true;
+
+	GrabToolComponent = CreateDefaultSubobject<UGrabToolComponent>(TEXT("GrabToolComponent"));
+	GrabToolComponent->SetupAttachment(CameraHolder);
 }
 
 void AMainCharacter::BeginPlay()
