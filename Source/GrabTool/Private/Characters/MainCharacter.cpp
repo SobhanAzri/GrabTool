@@ -9,12 +9,9 @@ AMainCharacter::AMainCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
-	CameraHolder = CreateDefaultSubobject<USceneComponent>(TEXT("CameraHolder"));
-	CameraHolder->SetupAttachment(GetRootComponent());
-	CameraHolder->SetRelativeLocation(FVector(0.f, 0.f, 65.f));
-
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
-	CameraComponent->SetupAttachment(CameraHolder);
+	CameraComponent->SetupAttachment(GetRootComponent());
+	CameraComponent->SetRelativeLocation(FVector(0.f, 0.f, 65.f));
 	CameraComponent->bEnableFirstPersonFieldOfView = true;
 	CameraComponent->FieldOfView = 80.f;
 	CameraComponent->bEnableFirstPersonScale = true;
@@ -22,7 +19,7 @@ AMainCharacter::AMainCharacter()
 	CameraComponent->bUsePawnControlRotation = true;
 
 	GrabToolComponent = CreateDefaultSubobject<UGrabToolComponent>(TEXT("GrabToolComponent"));
-	GrabToolComponent->SetupAttachment(CameraHolder);
+	GrabToolComponent->SetupAttachment(CameraComponent);
 }
 
 void AMainCharacter::BeginPlay()

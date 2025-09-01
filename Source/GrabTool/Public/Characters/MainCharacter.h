@@ -40,8 +40,8 @@ private:
 
 	//***	Components	***//
 
-	UPROPERTY(VisibleAnywhere)
-	USceneComponent* CameraHolder;		// i Declared This Component to Attach Camera , FPS Arms , etc... 
+	//UPROPERTY(VisibleAnywhere)
+	//USceneComponent* CameraHolder;		// i Declared This Component to Attach Camera , FPS Arms , etc... 
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* CameraComponent;
