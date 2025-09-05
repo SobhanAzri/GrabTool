@@ -1,3 +1,6 @@
+⚠️ this project is not complete yet
+
+
 # A Grab/Release - Scale/Rotate Game Mechanics Showcase
 
 This repository contains a robust and reusable component developed in Unreal Engine 5 using C++ and Blueprints. It demonstrates a physics-based grab system with scale and rotation mechanics, designed to be easily integrated into any character blueprint.
